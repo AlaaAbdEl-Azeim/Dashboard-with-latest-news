@@ -26,12 +26,12 @@ ng serve -open
 
 This app contain two components "carousel" and "latest-news"
 
-###Carousel component
+### Carousel component
 
 used ng-simple-slideshow pachage see "https://www.npmjs.com/package/ng-simple-slideshow"
 slider contain navigation buttons and caption title
 
-###Latest news component
+### Latest news component
 
 get latest news articles from newsapi see "https://newsapi.org/".
 each article have a read more link to navigate to the original news link.
