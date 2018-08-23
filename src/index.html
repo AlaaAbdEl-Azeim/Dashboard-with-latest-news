@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <header>
+    <!-- Language drop down -->
+    <a class="uk-button uk-link-reset">En<i uk-icon="icon: chevron-down"></i></a>
+    <div uk-dropdown="mode: click" class="uk-margin-remove">
+        <ul class="uk-nav uk-dropdown-nav">
+            <li class="uk-active"><a href="#">English</a></li>
+            <li><a href="#">Arabic</a></li>
+            <li><a href="#">French</a></li>
+        </ul>
+    </div>
+
+    <!-- menu icon -->
+    <a uk-icon="icon: menu" class="uk-align-right"></a>
+  </header>
+  <app-root>Loading ...</app-root>
+  <footer>
+    <!-- copy write -->
+    <span class="uk-align-left uk-margin-remove">© 2018 News, All rights reserved.</span>
+    <!--links  -->
+    <ul class="uk-align-right uk-margin-remove">
+      <li class="uk-link-reset"><a>Privacy Polic</a></li>
+      <li class="uk-link-reset"><a>Copyright</a></li>
+      <li class="uk-link-reset"><a>Terms & Conditions</a></li>
+      <li class="uk-link-reset"><a>Contact Us</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>

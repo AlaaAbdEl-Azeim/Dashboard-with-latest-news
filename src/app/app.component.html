@@ -1,0 +1,16 @@
+<div class="uk-position-absolute slideshow-arrow-caption">
+    <div class="slide-arrows">
+        <a class="border-circle uk-margin-right" uk-icon="icon: triangle-left;ratio: 1.7" [ngClass]="{'disabled':index == 0}" (click)="slideshow.onSlide(-1)"></a>
+        <a class="border-circle" uk-icon="icon: triangle-right;ratio: 1.7" [ngClass]="{'disabled':index == imageUrlArray.length-1}" (click)="slideshow.onSlide(1)"></a>
+    </div>
+    <div class="slideshow-caption">
+        <label class="caption-title uk-display-block">{{imageUrlArray[index].title}}</label>
+        <label class="caption-sub-title uk-display-block">{{imageUrlArray[index].subTitle}}</label>
+    </div>
+    <button class="uk-text-uppercase button-flat-primary"><a class="uk-link-reset" href="{{imageUrlArray[index].linkUrl}}" target="_blank">Learn More</a></button>
+</div>
+<slideshow #slideshow [imageUrls]="imageUrlArray" [height]="'750px'" [showArrows]="false" [autoPlayInterval]="5000"
+    [captionColor]="'#000'" [captionBackground]="'transparent'" [backgroundPosition]="'top left'" (onSlideLeft)="onSlide($event)" (onSlideRight)="onSlide($event)"></slideshow>
+<div class="latest-news-container uk-margin-large-top">
+    <app-latest-news></app-latest-news>
+</div>
