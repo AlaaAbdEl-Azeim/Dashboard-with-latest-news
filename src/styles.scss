@@ -102,9 +102,7 @@ footer{
       position: relative;
       &:not(:last-child):after{
         content: "|";
-        right: 0;
-        position: absolute;
-        line-height: 80px;
+        padding-left: 20px;
       }
     }
   }
