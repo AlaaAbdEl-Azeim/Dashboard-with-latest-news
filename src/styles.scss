@@ -70,8 +70,8 @@ nav a.active {
 }
 
 /* everywhere else */
-* {
-  font-family: proximaNova, Arial, Helvetica, sans-serif;
+:host ::ng-deep * {
+  font-family: proximaNova;
 }
 
 header{
